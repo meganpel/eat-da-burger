@@ -1,0 +1,52 @@
+body {
+    background-color: #f7d271;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.burger-image {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 800px;
+    text-align:center;
+}
+
+.burger-input {
+    padding: 50px 20px;
+    width: 400px;
+}
+
+.submit-button {
+    margin: 10px;
+    background-color: #407bb0;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.not-devoured-burger-title {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.devoured-burger-title {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 10px;
+    color: grey;
+}
+
+.devour-button {
+    background-color: #dddddd;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

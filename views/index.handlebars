@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{#each burgers}}
+                {{#unless this.devoured}}
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="not-devoured-burger-title">{{this.id}}. {{this.burger_name}}</div>
+                    </div>
+                        <form action="/" method="post">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input class="devour-button" type="submit" value="Devour it!">
+                        </form>
+                </div>
+                {{/unless}}
+            {{/each}}
+        </div>
+
+        <div class="col">
+            {{#each burgers}}
+                {{#if this.devoured}}
+                    <div class="col">
+                        <div class="devoured-burger-title mb-3">{{this.id}}. {{this.burger_name}}</div>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<br />
+
+<form action="/" method="post">
+    <input class="burger-input" type="text" name="burger_name">
+    <br />
+    <input class="submit-button" type="submit" value="Submit">
+</form>
+<p>Enter a burger you want to eat Click the "Submit" button.</p>
