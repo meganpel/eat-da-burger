@@ -6,3 +6,6 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 - In the config folder, there is `connection.js` where you will have to fill out your MySQL database configuration.
 - Run the app: `node server.js`
 - Go in your browser to: `http://localhost:4000/`
+
+## View app on Heroku
+https://hidden-garden-85259.herokuapp.com/
