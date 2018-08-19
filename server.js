@@ -16,6 +16,6 @@ app.use('/', express.static(path.join(__dirname, './public')));
 
 require(path.join(__dirname, "./controllers/burgers_controller.js"))(app);
 
-app.listen(PORT, function() {
+app.listen(process.env.PORT || PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
